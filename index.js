@@ -36,23 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    function createFragment(x, y) {
-        const fragment = document.createElement('div');
-        fragment.className = 'fragment';
-        fragment.style.left = `${x}px`;
-        fragment.style.top = `${y}px`;
-        document.body.appendChild(fragment);
-
-        // Animación para los fragmentos
-        setTimeout(() => {
-            fragment.style.transform = `translate(${Math.random() * 100}px, ${Math.random() * 100}px)`;
-            fragment.style.opacity = '0';
-        }, 100);
-
-        setTimeout(() => {
-            fragment.remove();
-        }, 1000);
-    }
+    
 
     // Ajustar la posición de la mira con el movimiento del mouse
     document.addEventListener('mousemove', (event) => {
