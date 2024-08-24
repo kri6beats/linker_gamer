@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js" defer></script>
+    <script src="./audio.js" defer></script>
+    <script src="./fragment.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.14.5/build/matter.min.js"></script>
+    
+    <title>TRH</title>
+</head>
+<body>
+    
+    <div id="view-container">
+        <div id="crosshair"></div>
+        <div id="m416"></div>
+    </div>
+    <audio id="gun-sound" src="./sounds/disparo.wav"></audio>
+    <audio id="reload-sound" src="./sounds/recargar.wav"></audio>
+    <main>
+        <article id="poster">
+            <header id="poster_header">
+                <h1 id="poster_header_titulo" data-title="The Real Hunters">The Real Hunters</h1>
+            </header>
+            <p id="frase_titulo"><strong>ÚNETE AL MEJOR CLAN DE PUBG/PC</strong></p>
+            <p id="sub_titulo"><span data-title="FPP">FPP</span> <span data-title="TPP">TPP</span></p>
+            <img id="front_logo" src="./img/logotrh.png">
+        </article>
+    </main>
+    <nav>
+        <a href="https://discord.gg/the-real-hunters-esport-team-849838005824520232" target="_blank">Discord Oficial</a>
+        <a href="https://www.youtube.com/@TORTUGAVELOZ" target="_blank">Youtube Oficial</a>
+        <a href="https://www.twitch.tv/tortugaveloz1996" target="_blank">Twitch Oficial</a>
+        <a href="https://www.facebook.com/profile.php?id=61559750763758&mibextid=LQQJ4d" target="_blank">Facebook Oficial</a>
+    </nav>
+    <footer>
+        <div id="audio-lobby">
+            <audio id="miAudio" src="./sounds/introPubg.mp3" preload="auto"></audio>
+            <button onclick="playAudio()">></button>
+            <button onclick="pauseAudio()">||</button>
+            <br>
+            <input type="range" id="slider" min="0" max="100" value="0">
+            <span id="currentTime">0:00</span>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>
